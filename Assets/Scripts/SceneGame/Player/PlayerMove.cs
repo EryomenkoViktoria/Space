@@ -26,6 +26,10 @@ namespace GameDevEVO
                 m_Direction.x = m_Joystick.Horizontal;
                 m_Rigidbody2D.MovePosition(m_Rigidbody2D.position + m_Speed * Time.fixedDeltaTime * m_Direction);
             }
+            else
+            {
+                m_Rigidbody2D.velocity = Vector2.zero;
+            }
         }
     }
 

@@ -13,7 +13,7 @@ namespace GameDevEVO
         private Vector2 m_RestertPosition;
         private void Awake()
         {
-            m_RestertPosition = transform.position;
+            m_RestertPosition = transform.position= new Vector2(transform.position.x, new SafeAreaData().GetMin().y);
             m_PositionMinY = m_Sprite.bounds.size.y * 2 - m_RestertPosition.y;
         }
         private void Update()

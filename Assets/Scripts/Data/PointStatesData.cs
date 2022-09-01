@@ -8,9 +8,9 @@ namespace GameDevEVO
  {
         private const string Key = "StatesData";
 
-        public void Save(PointState pointState)
+        public void Save(PointStates pointStates)
         {
-            PlayerPrefs.SetString(Key, JsonUtility.ToJson(pointState));
+            PlayerPrefs.SetString(Key, JsonUtility.ToJson(pointStates));
             PlayerPrefs.Save();
         }
 

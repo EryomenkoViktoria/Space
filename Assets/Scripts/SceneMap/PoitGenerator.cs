@@ -31,13 +31,13 @@ namespace GameDevEVO
         private void Generate()
         {
            PointStates pointStates = new PointStates();
-            pointStates.States.Add(PointState.OneStar);
-            pointStates.States.Add(PointState.Open);
-            pointStates.States.Add(PointState.TwoStars);
-            pointStates.States.Add(PointState.ThreeStars);
-            pointStates.States.Add(PointState.Locked);
-            pointStates.States.Add(PointState.Locked);
-            pointStates.States.Add(PointState.Locked);
+            pointStates.States.Add(PointsStates.OneStar);
+            pointStates.States.Add(PointsStates.Open);
+            pointStates.States.Add(PointsStates.TwoStars);
+            pointStates.States.Add(PointsStates.ThreeStars);
+            pointStates.States.Add(PointsStates.Locked);
+            pointStates.States.Add(PointsStates.Locked);
+            pointStates.States.Add(PointsStates.Locked);
 
             PointPosition pointPosition = new PointPosition();
 
@@ -49,7 +49,7 @@ namespace GameDevEVO
                 currentPosition = pointPosition.GetNextPosition();
                 pointPositions.Add(currentPosition);
 
-                if (pointStates.States[i] == PointState.Locked)
+                if (pointStates.States[i] == PointsStates.Locked)
                     Instantiate(m_PointLocked, transform).transform.position = currentPosition;
                 else
                 {
@@ -60,20 +60,20 @@ namespace GameDevEVO
 
                     switch (pointStates.States[i])
                     {
-                        case PointState.Open:
+                        case PointsStates.Open:
                             sprite = m_Sprites[1];
                             break;
-                        case PointState.OneStar:
+                        case PointsStates.OneStar:
                             sprite = m_Sprites[2];
                             break;
-                        case PointState.TwoStars:
+                        case PointsStates.TwoStars:
                             sprite = m_Sprites[3];
                             break;
-                        case PointState.ThreeStars:
+                        case PointsStates.ThreeStars:
                             sprite = m_Sprites[4];
                             break;
                     }
-                    point.SetParameters(sprite, 1);
+                    point.SetParameters(sprite, i);
                 }
             }
         

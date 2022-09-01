@@ -7,11 +7,11 @@ namespace GameDevEVO
     [System.Serializable]
  public class PointStates : MonoBehaviour
  {
-        public List<PointState> States = new List<PointState>();
+        public List<PointsStates> States = new List<PointsStates>();
  }
 
     [SerializeField]
-    public enum PointState
+    public enum PointsStates
     {
         Locked,
         Open,
