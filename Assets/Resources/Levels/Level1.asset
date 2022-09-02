@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 704c62ad495fb9a42b00d0accb205270, type: 3}
+  m_Name: Level1
+  m_EditorClassIdentifier: 
+  Waves:
+  - EnemyPrefab: {fileID: 7579408047304625823, guid: a285acde0258be34282da311b25eb17e, type: 3}
+    CountInWave: 5
+    WaitAfterWave: 3
+  - EnemyPrefab: {fileID: 7579408047304625823, guid: a285acde0258be34282da311b25eb17e, type: 3}
+    CountInWave: 1
+    WaitAfterWave: 1
+  - EnemyPrefab: {fileID: 7579408047304625823, guid: a285acde0258be34282da311b25eb17e, type: 3}
+    CountInWave: 10
+    WaitAfterWave: 6
