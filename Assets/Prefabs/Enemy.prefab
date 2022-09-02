@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 362532805586093279}
   - component: {fileID: 2708969453067968715}
   - component: {fileID: 9072546477776806470}
+  - component: {fileID: 3722626935268282704}
+  - component: {fileID: 3585821588219251647}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -98,6 +100,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f9cfc7624743d240a975541ffb4a7b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnCheckPoint:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8891471023679324709}
+        m_TargetAssemblyTypeName: GameDevEVO.CannonSingle, Assembly-CSharp
+        m_MethodName: Shot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Path: {fileID: 11400000, guid: c071d0bb556b57d43acc31471dad56ae, type: 2}
 --- !u!50 &2708969453067968715
 Rigidbody2D:
@@ -146,6 +163,46 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 10.24, y: 10.24}
   m_EdgeRadius: 0
+--- !u!114 &3722626935268282704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579408047304625823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cc6a19a252c1ea43827e8941c46cf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MaxHealth: 300
+  OnEndedHealth:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3585821588219251647}
+        m_TargetAssemblyTypeName: GameDevEVO.EnemyDestuction, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3585821588219251647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579408047304625823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18df8432af5f4774f86134d841a1d703, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1190764995385695664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -217,3 +274,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1308223373477134102, guid: dd76182c57c31d8458587f1558c750b8, type: 3}
   m_PrefabInstance: {fileID: 1190764995385695664}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8891471023679324709 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7773964735736373141, guid: dd76182c57c31d8458587f1558c750b8, type: 3}
+  m_PrefabInstance: {fileID: 1190764995385695664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca1069168305d041823fac37a470a8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

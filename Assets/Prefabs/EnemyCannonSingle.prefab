@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 1308223373477134102}
   - component: {fileID: 1308223373477134313}
   - component: {fileID: 7773964735736373141}
-  - component: {fileID: 4673033236633316134}
-  - component: {fileID: 59729851103825059}
   m_Layer: 0
   m_Name: EnemyCannonSingle
   m_TagString: Untagged
@@ -99,64 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BulletPrefab: {fileID: 464999871329291730, guid: e8f509cddfa829d4f93ddc14eed49fd1, type: 3}
-  m_BulletsCount: 4
+  m_BulletsCount: 0
   m_BulletStartPosition: {fileID: 1308223375211935946}
---- !u!114 &4673033236633316134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308223373477134312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34c79b1211298044eb7408b0b6781622, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_GameEvent: {fileID: 11400000, guid: 4e60615edea011949b2be4433d019acf, type: 2}
-  m_Actions:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 59729851103825059}
-        m_TargetAssemblyTypeName: GameDevEVO.ShortTimer, Assembly-CSharp
-        m_MethodName: StartTimer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &59729851103825059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308223373477134312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6732af73dbc3824999344b33e87fe1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShothInterval: 0.5
-  OnShot:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7773964735736373141}
-        m_TargetAssemblyTypeName: GameDevEVO.CannonSingle, Assembly-CSharp
-        m_MethodName: Shot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1308223375211935949
 GameObject:
   m_ObjectHideFlags: 0

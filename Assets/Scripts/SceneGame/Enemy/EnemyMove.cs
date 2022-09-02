@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace GameDevEVO 
 {
@@ -9,8 +10,10 @@ namespace GameDevEVO
  {
         private const float Speed = 5f;
 
-        private float m_EndPosition;
+        //  private float m_EndPosition;
 
+        [SerializeField]
+        private UnityEvent OnCheckPoint;
         private Rigidbody2D m_Rigibody;
 
         [SerializeField]
@@ -30,6 +33,7 @@ namespace GameDevEVO
                 if (m_Index < m_Path.Points.Count - 1)
                 {
                     m_Index++;
+                    OnCheckPoint.Invoke();
                 }
 
                 else
