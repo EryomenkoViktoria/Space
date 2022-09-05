@@ -33,7 +33,7 @@ namespace GameDevEVO
         {
             if (m_Bullets.ContainsKey(bulletPrefab.name))
             {
-                for (int i = 0; i < m_Bullets.Count; i++)
+                for (int i = 0; i < m_Bullets[bulletPrefab.name].Count; i++)
                 {
                     if (!m_Bullets[bulletPrefab.name][i].activeInHierarchy)
                         return m_Bullets[bulletPrefab.name][i];

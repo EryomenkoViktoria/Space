@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca1069168305d041823fac37a470a8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_BulletPrefab: {fileID: 1308223373477134312}
+  m_BulletPrefab: {fileID: 464999871329291730, guid: 6696e08818e346842897dbcd54a1a34b, type: 3}
   m_BulletsCount: 4
   m_BulletStartPosition: {fileID: 1308223375211935946}
 --- !u!114 &4673033236633316134
