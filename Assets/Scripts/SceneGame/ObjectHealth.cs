@@ -35,5 +35,18 @@ namespace GameDevEVO
             }
 
         }
+
+        public void AddHealth(int value)
+        {
+            if (value > 0)
+            {
+                m_CurrentHealth += value;
+            }
+            if (m_CurrentHealth> m_MaxHealth)
+            {
+                m_CurrentHealth = m_MaxHealth;
+            }
+            
+        }
     }
 }
