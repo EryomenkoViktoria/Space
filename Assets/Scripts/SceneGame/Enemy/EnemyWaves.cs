@@ -7,7 +7,10 @@ namespace GameDevEVO
 {
  public class EnemyWaves : MonoBehaviour
  {
-
+        [SerializeField]
+        private BonusGenerator m_BonusGenerator;
+        [SerializeField]
+        private BonusQueue m_BonusQueue;
         private LevelData m_Level;
         private int m_IndexWave;
         private int m_IndexEnemy;
@@ -31,6 +34,14 @@ namespace GameDevEVO
                 for (int i = 0; i < wave.CountInWave; i++)
                 {
                     var enemy = Instantiate(wave.EnemyPrefab,transform);
+                   
+                    if( enemy.TryGetComponent(out EnemyBonusDrop enemyBonusDrop))
+                    {
+                        enemyBonusDrop.SetBonusQueue(m_BonusQueue);
+                        enemyBonusDrop.SetHaveBonus(m_BonusGenerator.TryGetBonus());
+                    }
+                    
+                    
                     enemy.transform.position = startPosition;
                     enemy.SetActive(false);
                     m_Enemies.Add(enemy);

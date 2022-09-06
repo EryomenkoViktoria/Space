@@ -8,7 +8,7 @@ namespace GameDevEVO
  {
         public void Activate()
         {
-            Destroy(gameObject);
+            Destroy(gameObject, 0.2f);
         }
  }
 }
