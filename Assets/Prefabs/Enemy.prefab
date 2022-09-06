@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3585821588219251647}
   - component: {fileID: 3866032696140051845}
   - component: {fileID: 8826123469384925740}
+  - component: {fileID: 8958715742526299646}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -241,6 +242,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8958715742526299646}
+        m_TargetAssemblyTypeName: GameDevEVO.EnemyBonusDrop, Assembly-CSharp
+        m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3585821588219251647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +291,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Score: 120
+--- !u!114 &8958715742526299646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7579408047304625823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ae69dcc0a7bac74999118170f2c2e7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1190764995385695664
 PrefabInstance:
   m_ObjectHideFlags: 0

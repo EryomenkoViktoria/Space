@@ -46,6 +46,7 @@ namespace GameDevEVO
             {
                 m_CurrentHealth = m_MaxHealth;
             }
+            Debug.Log(m_CurrentHealth);
             
         }
     }

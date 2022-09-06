@@ -641,6 +641,8 @@ GameObject:
   - component: {fileID: 561752921}
   - component: {fileID: 561752920}
   - component: {fileID: 561752923}
+  - component: {fileID: 561752925}
+  - component: {fileID: 561752924}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -744,6 +746,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e4b65a0b3732d540ac19868e83b0e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_BonusGenerator: {fileID: 561752924}
+  m_BonusQueue: {fileID: 561752925}
 --- !u!114 &561752923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,6 +775,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &561752924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561752917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e94b2eaf2058549b9d7fd562335e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BonusQueue: {fileID: 561752925}
+  m_GameBonuseData: {fileID: 11400000, guid: eb72d7c7bfa4cca40b9c545644415628, type: 2}
+--- !u!114 &561752925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561752917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226166e14153d4f438dfbe65f34007f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &590569806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -833,6 +863,10 @@ PrefabInstance:
     - target: {fileID: 6942904268943258818, guid: bb7aea9e704e101469d4c9cb0999c4a0, type: 3}
       propertyPath: m_Name
       value: PlayerCannonMutiyple (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942904268943258818, guid: bb7aea9e704e101469d4c9cb0999c4a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb7aea9e704e101469d4c9cb0999c4a0, type: 3}
@@ -904,6 +938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCannonMutiyple
       objectReference: {fileID: 0}
+    - target: {fileID: 6942904268943258818, guid: bb7aea9e704e101469d4c9cb0999c4a0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb7aea9e704e101469d4c9cb0999c4a0, type: 3}
 --- !u!1001 &741554377
@@ -968,6 +1006,10 @@ PrefabInstance:
     - target: {fileID: 1308223373477134312, guid: ae91f0b692c7bf74ab9cb1cc6c992104, type: 3}
       propertyPath: m_Name
       value: PlayerCannonSingle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1308223373477134312, guid: ae91f0b692c7bf74ab9cb1cc6c992104, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae91f0b692c7bf74ab9cb1cc6c992104, type: 3}

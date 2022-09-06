@@ -12,6 +12,11 @@ namespace GameDevEVO
         private const float Speed=5f;
         [SerializeField]
         private UnityEvent Activated;
+
+        [SerializeField, Range(10, 100)]
+        private int m_Weight = 10;
+
+        public int Weight => m_Weight;
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if(collision.TryGetComponent(out PlayerMove playerMove))

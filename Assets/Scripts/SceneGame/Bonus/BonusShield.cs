@@ -18,6 +18,7 @@ namespace GameDevEVO
         {
             if(m_currentShield == null)
             {
+               
                 m_currentShield = Instantiate(m_ShieldPrefab);
             }
         }

@@ -47,10 +47,10 @@ namespace GameDevEVO
             WaitForSeconds wait = new WaitForSeconds(waitAndStep);
             while (m_CurrentTime > 0)
             {
-                m_CurrentTime = waitAndStep;
+                m_CurrentTime -= waitAndStep;
                 yield return wait;
             }
-            waitAndStep = 0;
+            m_CurrentTime = 0;
             ShowShield(false);
             transform.SetParent(null);
         }

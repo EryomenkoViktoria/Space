@@ -112,7 +112,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_Health: 100
+  m_Weight: 10
+  m_Health: 200
 --- !u!114 &7008803735474373172
 MonoBehaviour:
   m_ObjectHideFlags: 0
